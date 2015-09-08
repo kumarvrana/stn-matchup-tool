@@ -1,8 +1,8 @@
 <?php
 global $dbs;
-//global $mosConfig_db, $mosConfig_host, $mosConfig_user, $mosConfig_password;
+
 try {
-	$conf = Site::getConfig('cdndb', 'stn');
+	$conf = Site::getConfig('host', 'db');
 	$dbs = new PDO(
 		"mysql:host={$conf['db_host']};dbname={$conf['db_mysql_db']}",
 		$conf['db_mysql_user'],
