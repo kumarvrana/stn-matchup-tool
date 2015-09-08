@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+    <name>stn_matchup</name>
+	<creationDate>2015</creationDate>
+	<author>Richestsoft-parwinder</author>
+	<authorEmail>richestsoft@gmail.com</authorEmail>
+	<authorUrl>http://www.richestsoft.com</authorUrl>
+	<version>1.0</version>
+	<description>STN Product matchup tool</description>
+    <administration>
+        <menu>stn_matchup</menu>
+        <files><!-- Backend Files! -->
+            <filename>admin.stn_matchup.php</filename>
+			<filename>stn_matchup.config.php</filename>
+			<filename>localstore_config.php</filename>
+			<filename>toolbar.stn_matchup.php</filename>
+        </files>
+		
+		
+		 <files folder="ajax"> 
+            <filename>import.php</filename>
+		  </files>
+		  
+		  <files folder="css"> 
+			<filename>matchup-main.css</filename>
+		</files>
+		
+		<files folder="js"> 
+			<filename>jquery-1.11.2.min.js</filename>
+			<filename>matchup-main.js</filename>
+		</files>
+		
+		 <files folder="lib"> 
+			<filename>ajax_functions.php</filename>
+			<filename>functions.php</filename>
+			<filename>import_functions.php</filename>
+			<filename>matchup_functions.php</filename>
+		</files>
+		
+		 <files folder="view"> 
+			<filename>matchup_export_csv.php</filename>
+			<filename>matchup_report.php</filename>
+			<filename>matchup_results_table.php</filename>
+			
+        </files>
+		
+		 <files folder="view/lib-excel/Classes"> 
+			<filename>PHPExcel.php</filename>
+			<folder>PHPExcel</folder>
+		
+        </files>
+		
+    </administration>
+</mosinstall>
